@@ -200,8 +200,8 @@ A segurança foi um pilar fundamental durante o desenvolvimento. As seguintes me
 
 * **Desafio:** Criar uma camada de dados flexível para não depender de um único SGBD.
     * **Solução:** A implementação dos padrões Repository e Abstract Factory se mostrou eficaz.
-* **Desafio:** Notificar clientes sobre o status da O.S. sem APIs de mensagens acessíveis.
-    * **Solução:** Foi desenvolvida uma automação criativa que solucionou o problema.
+* **Desafio:** Notificar clientes sobre o andamento e status da O.S.
+    * **Solução:** Foi desenvolvida uma automação criativa para notificação via WhatsApp.
 
 ---
 
