@@ -117,26 +117,26 @@ graph TD
 
 ```mermaid
 erDiagram
-    CLIENTES ||--o{ EQUIPAMENTOS : "possui"
-    EQUIPAMENTOS ||--o{ ORDENS_DE_SERVICO : "tem"
+    **CLIENTES** ||--o{ EQUIPAMENTOS : "possui"
+    **EQUIPAMENTOS** ||--o{ ORDENS_DE_SERVICO : "tem"
     
-    ORDENS_DE_SERVICO }o--o{ SERVICOS_OS : "inclui"
-    SERVICOS ||--o{ SERVICOS_OS : "é um"
+    **ORDENS_DE_SERVICO** }o--o{ SERVICOS_OS : "inclui"
+    **SERVICOS** ||--o{ SERVICOS_OS : "é um"
 
-    ORDENS_DE_SERVICO }o--o{ PRODUTOS_OS : "utiliza"
-    PRODUTOS ||--o{ PRODUTOS_OS : "é um"
+    **ORDENS_DE_SERVICO** }o--o{ PRODUTOS_OS : "utiliza"
+    **PRODUTOS** ||--o{ PRODUTOS_OS : "é um"
 
-    CLIENTES {
+    **CLIENTES** {
         int ID
         string Nome
         string Telefone
     }
-    EQUIPAMENTOS {
+    **EQUIPAMENTOS** {
         int ID
         string Descricao
         string NumeroSerie
     }
-    ORDENS_DE_SERVICO {
+    **ORDENS_DE_SERVICO** {
         int ID
         date DataEntrada
         string DefeitoRelatado
@@ -156,11 +156,11 @@ erDiagram
 
 ```mermaid
 sequenceDiagram
-    participant Usuario
-    participant UI (WinForms)
-    participant BLL (Negócio)
-    participant DAL (Dados)
-    participant BancoDeDados
+    participant **Usuario**
+    participant **UI** (WinForms)
+    participant **BLL** (Negócio)
+    participant **DAL** (Dados)
+    participant **BancoDeDados**
 
     Usuario->>+UI (WinForms): Preenche dados e clica em "Salvar"
     UI (WinForms)->>+BLL (Negócio): SalvarOS(dadosDaOS)
