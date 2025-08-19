@@ -41,20 +41,20 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 
 ```mermaid
 mindmap
-  root((<b>Projeto ERP de Gestão</b>))
-    <b>1. Visão e Escopo</b>
+  root((**Projeto ERP de Gestão**))
+    **1. Visão e Escopo**
       - Problema e Valor
       - Requisitos
-    <b>2. Arquitetura e Design</b>
+    **2. Arquitetura e Design**
       - Arquitetura N-Camadas
       - Stack .NET Framework
       - Padrões de Projeto
       - Design de Dados
-    <b>3. Qualidade e Segurança</b>
+    **3. Qualidade e Segurança**
       - Estratégia de Testes
       - Prevenção de SQL Injection
       - Controle de Acesso RBAC
-    <b>4. Infra e Deploy</b>
+    **4. Infra e Deploy**
       - Ambiente Windows
       - Controle de Versão com Git
       - Estratégia de Deploy
