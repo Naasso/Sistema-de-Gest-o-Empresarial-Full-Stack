@@ -144,23 +144,23 @@ erDiagram
     }
 
     %% Definição de Estilos
-    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white;
-    classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black;
+    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white
+    classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black
 
-    %% Aplicação dos Estilos
-    class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity;
-    class SERVICOS_OS,PRODUTOS_OS linkingEntity;
+    %% Aplicação dos Estilos (sem ponto e vírgula)
+    class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity
+    class SERVICOS_OS,PRODUTOS_OS linkingEntity
 ```
 
 #### **Diagrama de Sequência: Cadastro de Nova O.S.**
 
 ```mermaid
 sequenceDiagram
-    %% Definição dos Participantes com Aliases (para facilitar a estilização)
+    %% Definição dos Participantes com Aliases de palavra única
     participant Usuario as User
-    participant UI (WinForms) as UI
-    participant BLL (Negócio) as BLL
-    participant DAL (Dados) as DAL
+    participant "UI (WinForms)" as UI
+    participant "BLL (Negócio)" as BLL
+    participant "DAL (Dados)" as DAL
     participant BancoDeDados as DB
 
     %% Fluxo de Ações
@@ -174,12 +174,12 @@ sequenceDiagram
     BLL-->>-UI: Retorna sucesso
     UI-->>-User: Exibe "O.S. salva com sucesso!"
 
-    %% Definição de Estilos
-    style User fill:#595959,color:white,stroke:#333,stroke-width:2px
-    style UI fill:#007bff,color:white,stroke:#333,stroke-width:2px
-    style BLL fill:#28a745,color:white,stroke:#333,stroke-width:2px
-    style DAL fill:#1d5c9e,color:white,stroke:#333,stroke-width:2px
-    style DB fill:#CC2927,color:white,stroke:#333,stroke-width:2px
+    %% Definição de Estilos aplicados aos Aliases
+    style User fill:#595959,color:white,stroke:#333
+    style UI fill:#007bff,color:white,stroke:#333
+    style BLL fill:#28a745,color:white,stroke:#333
+    style DAL fill:#1d5c9e,color:white,stroke:#333
+    style DB fill:#CC2727,color:white,stroke:#333
 ```
 
 ---
