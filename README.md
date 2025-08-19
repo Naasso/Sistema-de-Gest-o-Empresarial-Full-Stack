@@ -41,7 +41,7 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 
 ```mermaid
 graph TD
-    A("<b>Projeto ERP de Gestão</b>") --- B["1. Visão e Escopo"];
+    A("<b>Projeto ERP de Gestão Empresarial</b>") --- B["1. Visão e Escopo"];
     A --- C["2. Arquitetura e Design"];
     A --- D["3. Qualidade e Segurança"];
     A --- E["4. Infra e Deploy"];
