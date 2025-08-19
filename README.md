@@ -105,11 +105,11 @@ graph TD
     end
 
     %% -- ESTILOS --
-    style root fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff;
-    style cat1 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
-    style cat2 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
-    style cat3 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
-    style cat4 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    %%style root fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff;
+    %%style cat1 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    %%style cat2 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    %%style cat3 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    %%style cat4 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
@@ -144,12 +144,12 @@ erDiagram
     }
 
     %% Definição de Estilos Corrigida
-    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white,headerBkg:#007bff,headerColor:white,oddBkg:#ffffff,evenBkg:#ffffff
-    classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black
+    %%classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white,headerBkg:#007bff,headerColor:white,oddBkg:#ffffff,evenBkg:#ffffff
+    %%classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black
 
     %% Aplicação dos Estilos
-    class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity
-    class SERVICOS_OS,PRODUTOS_OS linkingEntity
+    %%class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity
+    %%class SERVICOS_OS,PRODUTOS_OS linkingEntity
 ```
 
 #### **Diagrama de Sequência: Cadastro de Nova O.S.**
