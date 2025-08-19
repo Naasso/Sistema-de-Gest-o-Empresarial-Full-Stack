@@ -43,21 +43,21 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 mindmap
   root((**Projeto ERP de Gestão**))
     **1. Visão e Escopo**
-      - Problema e Valor
-      - Requisitos
+      Problema e Valor
+      Requisitos
     **2. Arquitetura e Design**
-      - Arquitetura N-Camadas
-      - Stack .NET Framework
-      - Padrões de Projeto
-      - Design de Dados
+      Arquitetura N-Camadas
+      Stack .NET Framework
+      Padrões de Projeto
+      Design de Dados
     **3. Qualidade e Segurança**
-      - Estratégia de Testes
-      - Prevenção de SQL Injection
-      - Controle de Acesso RBAC
+      Estratégia de Testes
+      Prevenção de SQL Injection
+      Controle de Acesso RBAC
     **4. Infra e Deploy**
-      - Ambiente Windows
-      - Controle de Versão com Git
-      - Estratégia de Deploy
+      Ambiente Windows
+      Controle de Versão com Git
+      Estratégia de Deploy
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
