@@ -126,7 +126,7 @@ erDiagram
     ORDENS_DE_SERVICO }o--o{ PRODUTOS_OS : "utiliza"
     PRODUTOS ||--o{ PRODUTOS_OS : "é um"
 
-    <b>CLIENTES</b> {
+    CLIENTES {
         int ID
         string Nome
         string Telefone
@@ -144,10 +144,10 @@ erDiagram
     }
 
     %% Definição de Estilos
-    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white
+    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white,font-weight:bold
     classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black
 
-    %% Aplicação dos Estilos (sem ponto e vírgula)
+    %% Aplicação dos Estilos
     class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity
     class SERVICOS_OS,PRODUTOS_OS linkingEntity
 ```
