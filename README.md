@@ -41,49 +41,75 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 
 ```mermaid
 graph TD
-    root("Projeto ERP de Gestão")
+    %% -- NÓ PRINCIPAL --
+    root("<b>Projeto ERP de Gestão</b>");
 
-    subgraph "1. Visão e Escopo"
-        problema_valor["Problema e Valor"]
-        requisitos["Requisitos"]
-        root --o--> problema_valor
-        root --o--> requisitos
+    %% -- CATEGORIAS PRINCIPAIS --
+    cat1("<b>1. Visão e Escopo</b>");
+    cat2("<b>2. Arquitetura e Design</b>");
+    cat3("<b>3. Qualidade e Segurança</b>");
+    cat4("<b>4. Infra e Deploy</b>");
+
+    %% -- ITENS DA CATEGORIA 1 --
+    item1_1("Problema e Valor");
+    item1_2("Requisitos");
+
+    %% -- ITENS DA CATEGORIA 2 --
+    item2_1("Arquitetura N-Camadas");
+    item2_2("Stack .NET Framework");
+    item2_3("Padrões de Projeto");
+    item2_4("Design de Dados");
+
+    %% -- ITENS DA CATEGORIA 3 --
+    item3_1("Estratégia de Testes");
+    item3_2("Prevenção de SQL Injection");
+    item3_3("Controle de Acesso RBAC");
+
+    %% -- ITENS DA CATEGORIA 4 --
+    item4_1("Ambiente Windows");
+    item4_2("Controle de Versão com Git");
+    item4_3("Estratégia de Deploy");
+    
+    %% -- ESTRUTURA DE LINKS --
+    root --> cat1;
+    
+    %% Categoria 1
+    subgraph " ";
+        cat1 --> item1_1;
+        cat1 --> item1_2;
     end
 
-    subgraph "2. Arquitetura e Design"
-        n_camadas["Arquitetura N-Camadas"]
-        stack["Stack .NET Framework"]
-        padroes["Padrões de Projeto"]
-        design_dados["Design de Dados"]
-        root --o--> n_camadas
-        root --o--> stack
-        root --o--> padroes
-        root --o--> design_dados
+    %% Categoria 2
+    subgraph " ";
+        item1_2 --> cat2;
+        cat2 --> item2_1;
+        cat2 --> item2_2;
+        cat2 --> item2_3;
+        cat2 --> item2_4;
+    end
+    
+    %% Categoria 3
+    subgraph " ";
+        item2_4 --> cat3;
+        cat3 --> item3_1;
+        cat3 --> item3_2;
+        cat3 --> item3_3;
     end
 
-    subgraph "3. Qualidade e Segurança"
-        testes["Estratégia de Testes"]
-        sql_injection["Prevenção de SQL Injection"]
-        rbac["Controle de Acesso RBAC"]
-        root --o--> testes
-        root --o--> sql_injection
-        root --o--> rbac
+    %% Categoria 4
+    subgraph " ";
+        item3_3 --> cat4;
+        cat4 --> item4_1;
+        cat4 --> item4_2;
+        cat4 --> item4_3;
     end
 
-    subgraph "4. Infra e Deploy"
-        ambiente["Ambiente Windows"]
-        git["Controle de Versão com Git"]
-        deploy["Estratégia de Deploy"]
-        root --o--> ambiente
-        root --o--> git
-        root --o--> deploy
-    end
-
-    style root fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
-    style "1. Visão e Escopo" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style "2. Arquitetura e Design" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style "3. Qualidade e Segurança" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style "4. Infra e Deploy" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    %% -- ESTILOS --
+    style root fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff;
+    style cat1 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    style cat2 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    style cat3 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
+    style cat4 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
