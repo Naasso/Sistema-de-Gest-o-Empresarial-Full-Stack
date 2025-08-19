@@ -156,7 +156,7 @@ erDiagram
 
 ```mermaid
 sequenceDiagram
-    %% Definição dos Participantes com Aliases de palavra única
+    %% Definição dos Participantes
     participant Usuario as User
     participant "UI (WinForms)" as UI
     participant "BLL (Negócio)" as BLL
@@ -173,13 +173,6 @@ sequenceDiagram
     DAL-->>-BLL: Retorna objetoOS com ID
     BLL-->>-UI: Retorna sucesso
     UI-->>-User: Exibe "O.S. salva com sucesso!"
-
-    %% Definição de Estilos aplicados aos Aliases
-    style User fill:#595959,color:white,stroke:#333
-    style UI fill:#007bff,color:white,stroke:#333
-    style BLL fill:#28a745,color:white,stroke:#333
-    style DAL fill:#1d5c9e,color:white,stroke:#333
-    style DB fill:#CC2727,color:white,stroke:#333
 ```
 
 ---
