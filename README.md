@@ -41,55 +41,49 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 
 ```mermaid
 graph TD
-    %% Título Principal
-    ERP("<b>Projeto ERP de Gestão</b>")
+    root("<b>Projeto ERP de Gestão</b>")
 
-    %% Definição dos Títulos das Seções
-    Cat1("<b>1. Visão e Escopo</b>")
-    Cat2("<b>2. Arquitetura e Design</b>")
-    Cat3("<b>3. Qualidade e Segurança</b>")
-    Cat4("<b>4. Infra e Deploy</b>")
-
-    %% Definição dos Itens de cada Seção
-    subgraph " "
-        Item1_1["Problema e Valor"]
-        Item1_2["Requisitos"]
-        
-        Item2_1["Arquitetura N-Camadas"]
-        Item2_2["Stack .NET Framework"]
-        Item2_3["Padrões de Projeto"]
-        Item2_4["Design de Dados"]
-        
-        Item3_1["Estratégia de Testes"]
-        Item3_2["Prevenção de SQL Injection"]
-        Item3_3["Controle de Acesso RBAC"]
-        
-        Item4_1["Ambiente Windows"]
-        Item4_2["Controle de Versão com Git"]
-        Item4_3["Estratégia de Deploy"]
+    subgraph "<b>1. Visão e Escopo</b>"
+        problema_valor["Problema e Valor"]
+        requisitos["Requisitos"]
+        root --o--> problema_valor
+        root --o--> requisitos
     end
 
-    %% Links - A Mágica para forçar a verticalidade
-    ERP --> Cat1
-    Cat1 --> Cat2
-    Cat2 --> Cat3
-    Cat3 --> Cat4
+    subgraph "<b>2. Arquitetura e Design</b>"
+        n_camadas["Arquitetura N-Camadas"]
+        stack["Stack .NET Framework"]
+        padroes["Padrões de Projeto"]
+        design_dados["Design de Dados"]
+        root --o--> n_camadas
+        root --o--> stack
+        root --o--> padroes
+        root --o--> design_dados
+    end
 
-    %% Links dos Itens para suas respectivas categorias
-    Cat1 --- Item1_1 & Item1_2
+    subgraph "<b>3. Qualidade e Segurança</b>"
+        testes["Estratégia de Testes"]
+        sql_injection["Prevenção de SQL Injection"]
+        rbac["Controle de Acesso RBAC"]
+        root --o--> testes
+        root --o--> sql_injection
+        root --o--> rbac
+    end
 
-    Cat2 --- Item2_1 & Item2_2 & Item2_3 & Item2_4
-    
-    Cat3 --- Item3_1 & Item3_2 & Item3_3
-    
-    Cat4 --- Item4_1 & Item4_2 & Item4_3
-    
-    %% Estilos (Opcional, para deixar mais bonito)
-    style ERP fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
-    style Cat1 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style Cat2 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style Cat3 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style Cat4 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    subgraph "<b>4. Infra e Deploy</b>"
+        ambiente["Ambiente Windows"]
+        git["Controle de Versão com Git"]
+        deploy["Estratégia de Deploy"]
+        root --o--> ambiente
+        root --o--> git
+        root --o--> deploy
+    end
+
+    style root fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
+    style "<b>1. Visão e Escopo</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "<b>2. Arquitetura e Design</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "<b>3. Qualidade e Segurança</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "<b>4. Infra e Deploy</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
