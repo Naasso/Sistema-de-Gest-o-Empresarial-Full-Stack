@@ -128,19 +128,19 @@ erDiagram
 
     CLIENTES {
         int ID
-        string Nome
+        **string Nome**
         string Telefone
     }
     EQUIPAMENTOS {
         int ID
-        string Descricao
+        **string Descricao**
         string NumeroSerie
     }
     ORDENS_DE_SERVICO {
         int ID
-        date DataEntrada
+        **date DataEntrada**
         string DefeitoRelatado
-        string Status
+        **string Status**
     }
 
     %% Definição de Estilos
