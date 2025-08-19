@@ -41,31 +41,34 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 
 ```mermaid
 graph TD
-    subgraph A [1. Visão e Escopo]
-        A1[Problema e Valor]
-        A2[Requisitos]
+    A("<b>Projeto ERP de Gestão</b>") --- B["1. Visão e Escopo"];
+    A --- C["2. Arquitetura e Design"];
+    A --- D["3. Qualidade e Segurança"];
+    A --- E["4. Infra e Deploy"];
+
+    subgraph B
+        B1["Problema e Valor"];
+        B2["Requisitos"];
     end
 
-    subgraph B [2. Arquitetura e Design]
-        B1[Arquitetura N-Camadas]
-        B2[Stack .NET Framework]
-        B3[Padrões de Projeto]
-        B4[Design de Dados]
+    subgraph C
+        C1["Arquitetura N-Camadas"];
+        C2["Stack .NET Framework"];
+        C3["Padrões de Projeto"];
+        C4["Design de Dados"];
     end
     
-    subgraph C [3. Qualidade e Segurança]
-        C1[Estratégia de Testes]
-        C2[Prevenção de SQL Injection]
-        C3[Controle de Acesso RBAC]
+    subgraph D
+        D1["Estratégia de Testes"];
+        D2["Prevenção de SQL Injection"];
+        D3["Controle de Acesso RBAC"];
     end
 
-    subgraph D [4. Infra e Deploy]
-        D1[Ambiente Windows]
-        D2[Controle de Versão com Git]
-        D3[Estratégia de Deploy]
+    subgraph E
+        E1["Ambiente Windows"];
+        E2["Controle de Versão com Git"];
+        E3["Estratégia de Deploy"];
     end
-
-    A --> B --> C --> D
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
