@@ -144,7 +144,7 @@ erDiagram
     }
 
     %% Definição de Estilos Corrigida
-    classDef mainEntity stroke:#333,stroke-width:2px,headerBkg:#007bff
+    classDef mainEntity stroke:#333,stroke-width:2px,headerBkg:#777777
 
     %% Aplicação dos Estilos
     class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity
