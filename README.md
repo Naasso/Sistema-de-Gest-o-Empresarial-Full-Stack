@@ -40,35 +40,24 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 #### **Mapa Mental da Arquitetura**
 
 ```mermaid
-graph TD
-    A("<b>Projeto ERP de Gestão Empresarial</b>") --- B["1. Visão e Escopo"];
-    A --- C["2. Arquitetura e Design"];
-    A --- D["3. Qualidade e Segurança"];
-    A --- E["4. Infra e Deploy"];
-
-    subgraph B
-        B1["Problema e Valor"];
-        B2["Requisitos"];
-    end
-
-    subgraph C
-        C1["Arquitetura N-Camadas"];
-        C2["Stack .NET Framework"];
-        C3["Padrões de Projeto"];
-        C4["Design de Dados"];
-    end
-    
-    subgraph D
-        D1["Estratégia de Testes"];
-        D2["Prevenção de SQL Injection"];
-        D3["Controle de Acesso RBAC"];
-    end
-
-    subgraph E
-        E1["Ambiente Windows"];
-        E2["Controle de Versão com Git"];
-        E3["Estratégia de Deploy"];
-    end
+mindmap
+  root((<b>Projeto ERP de Gestão</b>))
+    <b>1. Visão e Escopo</b>
+      - Problema e Valor
+      - Requisitos
+    <b>2. Arquitetura e Design</b>
+      - Arquitetura N-Camadas
+      - Stack .NET Framework
+      - Padrões de Projeto
+      - Design de Dados
+    <b>3. Qualidade e Segurança</b>
+      - Estratégia de Testes
+      - Prevenção de SQL Injection
+      - Controle de Acesso RBAC
+    <b>4. Infra e Deploy</b>
+      - Ambiente Windows
+      - Controle de Versão com Git
+      - Estratégia de Deploy
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
