@@ -144,12 +144,10 @@ erDiagram
     }
 
     %% Definição de Estilos Corrigida
-    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white,headerBkg:#007bff,headerColor:white,oddBkg:#ffffff,evenBkg:#ffffff
-    %%classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black
+    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white
 
     %% Aplicação dos Estilos
     class CLIENTES,EQUIPAMENTOS,ORDENS_DE_SERVICO,SERVICOS,PRODUTOS mainEntity
-    %%class SERVICOS_OS,PRODUTOS_OS linkingEntity
 ```
 
 #### **Diagrama de Sequência: Cadastro de Nova O.S.**
