@@ -156,23 +156,21 @@ erDiagram
 
 ```mermaid
 sequenceDiagram
-    %% Definição dos Participantes
-    participant Usuario as User
-    participant "UI (WinForms)" as UI
-    participant "BLL (Negócio)" as BLL
-    participant "DAL (Dados)" as DAL
-    participant BancoDeDados as DB
+    participant Usuario
+    participant UI (WinForms)
+    participant BLL (Negócio)
+    participant DAL (Dados)
+    participant BancoDeDados
 
-    %% Fluxo de Ações
-    User->>+UI: Preenche dados e clica em "Salvar"
-    UI->>+BLL: SalvarOS(dadosDaOS)
-    BLL->>BLL: Valida regras de negócio
-    BLL->>+DAL: Salvar(objetoOS)
-    DAL->>+DB: Executa INSERT com parâmetros
-    DB-->>-DAL: Retorna sucesso
-    DAL-->>-BLL: Retorna objetoOS com ID
-    BLL-->>-UI: Retorna sucesso
-    UI-->>-User: Exibe "O.S. salva com sucesso!"
+    Usuario->>+UI (WinForms): Preenche dados e clica em "Salvar"
+    UI (WinForms)->>+BLL (Negócio): SalvarOS(dadosDaOS)
+    BLL (Negócio)->>BLL (Negócio): Valida regras de negócio
+    BLL (Negócio)->>+DAL (Dados): Salvar(objetoOS)
+    DAL (Dados)->>+BancoDeDados: Executa INSERT com parâmetros
+    BancoDeDados-->>-DAL (Dados): Retorna sucesso
+    DAL (Dados)-->>-BLL (Negócio): Retorna objetoOS com ID
+    BLL (Negócio)-->>-UI (WinForms): Retorna sucesso
+    UI (WinForms)-->>-Usuario: Exibe "O.S. salva com sucesso!"
 ```
 
 ---
