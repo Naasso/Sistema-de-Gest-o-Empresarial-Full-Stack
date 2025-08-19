@@ -41,16 +41,16 @@ A aplicação foi estruturada seguindo as melhores práticas de engenharia de so
 
 ```mermaid
 graph TD
-    root("<b>Projeto ERP de Gestão</b>")
+    root("Projeto ERP de Gestão")
 
-    subgraph "<b>1. Visão e Escopo</b>"
+    subgraph "1. Visão e Escopo"
         problema_valor["Problema e Valor"]
         requisitos["Requisitos"]
         root --o--> problema_valor
         root --o--> requisitos
     end
 
-    subgraph "<b>2. Arquitetura e Design</b>"
+    subgraph "2. Arquitetura e Design"
         n_camadas["Arquitetura N-Camadas"]
         stack["Stack .NET Framework"]
         padroes["Padrões de Projeto"]
@@ -61,7 +61,7 @@ graph TD
         root --o--> design_dados
     end
 
-    subgraph "<b>3. Qualidade e Segurança</b>"
+    subgraph "3. Qualidade e Segurança"
         testes["Estratégia de Testes"]
         sql_injection["Prevenção de SQL Injection"]
         rbac["Controle de Acesso RBAC"]
@@ -70,7 +70,7 @@ graph TD
         root --o--> rbac
     end
 
-    subgraph "<b>4. Infra e Deploy</b>"
+    subgraph "4. Infra e Deploy"
         ambiente["Ambiente Windows"]
         git["Controle de Versão com Git"]
         deploy["Estratégia de Deploy"]
@@ -80,10 +80,10 @@ graph TD
     end
 
     style root fill:#28a745,stroke:#fff,stroke-width:2px,color:#fff
-    style "<b>1. Visão e Escopo</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style "<b>2. Arquitetura e Design</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style "<b>3. Qualidade e Segurança</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
-    style "<b>4. Infra e Deploy</b>" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "1. Visão e Escopo" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "2. Arquitetura e Design" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "3. Qualidade e Segurança" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
+    style "4. Infra e Deploy" fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff
 ```
 > **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.png)**.
 
