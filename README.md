@@ -143,8 +143,8 @@ erDiagram
         string Status
     }
 
-    %% Definição de Estilos
-    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white,font-weight:bold
+    %% Definição de Estilos Corrigida
+    classDef mainEntity fill:#007bff,stroke:#333,stroke-width:2px,color:white,headerBkg:#007bff,headerColor:white,oddBkg:#ffffff,evenBkg:#ffffff
     classDef linkingEntity fill:#f2f2f2,stroke:#333,stroke-width:1px,color:black
 
     %% Aplicação dos Estilos
