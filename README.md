@@ -117,26 +117,26 @@ graph TD
 
 ```mermaid
 erDiagram
-    **CLIENTES** ||--o{ EQUIPAMENTOS : "possui"
-    **EQUIPAMENTOS** ||--o{ ORDENS_DE_SERVICO : "tem"
+    CLIENTES ||--o{ EQUIPAMENTOS : "possui"
+    EQUIPAMENTOS ||--o{ ORDENS_DE_SERVICO : "tem"
     
-    **ORDENS_DE_SERVICO** }o--o{ SERVICOS_OS : "inclui"
-    **SERVICOS** ||--o{ SERVICOS_OS : "é um"
+    ORDENS_DE_SERVICO }o--o{ SERVICOS_OS : "inclui"
+    SERVICOS ||--o{ SERVICOS_OS : "é um"
 
-    **ORDENS_DE_SERVICO** }o--o{ PRODUTOS_OS : "utiliza"
-    **PRODUTOS** ||--o{ PRODUTOS_OS : "é um"
+    ORDENS_DE_SERVICO }o--o{ PRODUTOS_OS : "utiliza"
+    PRODUTOS ||--o{ PRODUTOS_OS : "é um"
 
-    **CLIENTES** {
+    CLIENTES {
         int ID
         string Nome
         string Telefone
     }
-    **EQUIPAMENTOS** {
+    EQUIPAMENTOS {
         int ID
         string Descricao
         string NumeroSerie
     }
-    **ORDENS_DE_SERVICO** {
+    ORDENS_DE_SERVICO {
         int ID
         date DataEntrada
         string DefeitoRelatado
@@ -163,14 +163,14 @@ sequenceDiagram
     participant BancoDeDados
 
     Usuario->>+UI (WinForms): Preenche dados e clica em "Salvar"
-    **UI** (WinForms)->>+BLL (Negócio): SalvarOS(dadosDaOS)
-    **BLL** (Negócio)->>BLL (Negócio): Valida regras de negócio
-    **BLL** (Negócio)->>+DAL (Dados): Salvar(objetoOS)
-    **DAL** (Dados)->>+BancoDeDados: Executa INSERT com parâmetros
+    UI (WinForms)->>+BLL (Negócio): SalvarOS(dadosDaOS)
+    BLL (Negócio)->>BLL (Negócio): Valida regras de negócio
+    BLL (Negócio)->>+DAL (Dados): Salvar(objetoOS)
+    DAL (Dados)->>+BancoDeDados: Executa INSERT com parâmetros
     BancoDeDados-->>-DAL (Dados): Retorna sucesso
-    **DAL** (Dados)-->>-BLL (Negócio): Retorna objetoOS com ID
-    **BLL** (Negócio)-->>-UI (WinForms): Retorna sucesso
-    **UI** (WinForms)-->>-Usuario: Exibe "O.S. salva com sucesso!"
+    DAL (Dados)-->>-BLL (Negócio): Retorna objetoOS com ID
+    BLL (Negócio)-->>-UI (WinForms): Retorna sucesso
+    UI (WinForms)-->>-Usuario: Exibe "O.S. salva com sucesso!"
 ```
 
 ---
