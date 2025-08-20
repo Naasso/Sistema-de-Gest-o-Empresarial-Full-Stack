@@ -111,7 +111,7 @@ graph TD
     style cat3 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
     style cat4 fill:#007bff,stroke:#fff,stroke-width:2px,color:#fff;
 ```
-> **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](docs/mapa-mental-detalhado.jpg)**.
+> **Detalhe:** Para uma visão aprofundada, **[clique aqui para ver o mapa mental completo e detalhado](media/mapa-mental-detalhado.jpg)**.
 
 #### **Modelo de Entidade-Relacionamento**
 
