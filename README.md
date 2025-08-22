@@ -1,4 +1,4 @@
-# ERP de Gestão Empresarial para Assistências Técnicas
+# ERP de Gestão Empresarial Empresarial
 
 ![Status](https://img.shields.io/badge/Status-Em%20Produção-brightgreen)
 ![CSharp](https://img.shields.io/badge/C%23-11.0-blue?logo=c-sharp&logoColor=white)
